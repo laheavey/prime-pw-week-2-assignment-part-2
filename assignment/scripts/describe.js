@@ -50,8 +50,8 @@ if (name === 'Mary') {
 // Then we make a comparison.
 // If the variable code is an exact match to 123, then the variable secret is assigned the value 'super' as a string and the value of code becomes code multiplied by 2.
 // If the variable code is greater than 250, then the variable secret is assigned the value 'duper' as a string.
-// The variable code is an exact match to 123, so secret is assigned the value 'super' as a string and the value of code becomes code multiplied by 2.
-// We console.log 'super'.
+// The variable code is an exact match to 123, so secret is assigned the value 'super' as a string and the value of code becomes code multiplied by 2 (246).
+// We console.log secret which returns the result 'super'.
 
 //CODE
 /*
