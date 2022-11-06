@@ -26,10 +26,11 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called name and set it to 'Dane' as a string.
+// Then we make a comparison. 
+// If the value we set for name is an exact match for 'Mary', we console.log 'Hi, Mary!'
+// If the value we set for name is NOT 'Mary', we console.log 'How do you do?'
+// 'Dane' does not equal 'Mary', so we console.log 'How do you do?'
 
 //CODE
 /*
@@ -45,10 +46,12 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called secret without an assigned value, and we make a variable called code with a value of 123 as a number.
+// Then we make a comparison.
+// If the variable code is an exact match to 123, then the variable secret is assigned the value 'super' as a string and the value of code becomes code multiplied by 2.
+// If the variable code is greater than 250, then the variable secret is assigned the value 'duper' as a string.
+// The variable code is an exact match to 123, so secret is assigned the value 'super' as a string and the value of code becomes code multiplied by 2.
+// We console.log 'super'.
 
 //CODE
 /*
@@ -70,10 +73,13 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called isStudent with the boolean value true, a variable called age with the numerical value 34, and a variable zip with the numerical value 55407.
+// Then we make a comparison.
+// If the value of isStudent is true AND the value of zip is greater than 80000, we console.log 'You're a student on the West Coast!'.
+// If the value of isStudent is false OR the value of age is less than 30, we console.log 'What are your hobbies?'.
+// If the value of isStudent is true, we console.log 'Welcome to Prime!'.
+// If the variables do not apply to any of the above statements, we console.log 'How about the weather?' (but I couldn't get any change in the variables above to generate this result).
+// Given the variables we defined, we would console.log 'Welcome to Prime!'
 
 //CODE
 /*
@@ -125,40 +131,65 @@ if (number >= 2) {
 
 
 
-//4. We start with three variables -- colorOne is set to 'blue' and 
+// 4. We start with three variables -- colorOne is set to 'blue' and 
 // colorTwo is set to 'red', and mix is set to true. We check if mix is true 
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - instructions indicate that the colorOne and colorTwo variables should have their values reversed.
+// Should be:
+// let colorOne = 'blue';
+// let colorTwo - 'red';
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+// FIX - instructions indicate that the colorOne and colorTwo variables should both be set to 'purple' if mix is true.
+// Should be:
+// if (mix === true) {
+//   colorOne = 'purple';
+//   colorTwo = 'purple';
+// }
 if (mix === true) {
   colorOne = 'purple';
 }
 */
 
-//5. We start with two variables -- temp is set to 40 and time is set to 4.
+// 5. We start with two variables -- temp is set to 40 and time is set to 4.
 // We check if temp is higher than 39 and if time is greater or equal to  4 
 // -- they are so we console.log 'throw away the food!'
 
 /*
+// FIX - const time should be changed to let time, as time is not a constant & can change.
+// Should be let time = 4;
 let temp = 40;
 const time = 4;
 
+// FIX - the instructions indicate that temp should be higher than 39 AND time should be great than/equal to 4, but the below indicates OR
+// Should be:
+// if (temp > 39 && time >= 4) {
+//   console.log ('throw away the food!');
+// }
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
 */
 
-//6. We start with two variables -- age is set to 21 and minAge is set to 21.
+// 6. We start with two variables -- age is set to 21 and minAge is set to 21.
 // We check if age is greater than or equal to minAge 
 // -- it is, so we console.log 'enter'.
 
 /*
 let age = 21;
 const minAge = 21;
+
+// FIX - the instructions indicate that when age is greater than or equal to minAge, we console.log 'enter'.
+// The below is set up to compare the correct variables, but console.logs 'no entry' if minAge is less than/equal to age. This would give all ages 21+ the 'no entry' result. 
+// Additionally, the 'no entry' console.log is not mentioned at all in the instructions, and the minAge & age variables are not written in the same order as given in the directions. 
+// Should be:
+// if (age >= minAge) {
+//   console.log ('enter');
+// }
 
 if(minAge <= age) {
   console.log('no entry');
